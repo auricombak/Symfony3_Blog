@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Article Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_url">URL</label>  
+  <div class="col-md-4">
+  <input id="article_url" name="article_url" type="text" placeholder="Article URL" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_title">Title</label>  
+  <div class="col-md-4">
+  <input id="article_title" name="article_title" type="text" placeholder="article title" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_snippet">Snippet</label>  
+  <div class="col-md-4">
+  <input id="article_snippet" name="article_snippet" type="text" placeholder="Article Snippet" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_date">Date</label>  
+  <div class="col-md-4">
+  <input id="article_date" name="article_date" type="text" placeholder="article date of publication " class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_authors">Authors</label>  
+  <div class="col-md-4">
+  <input id="article_authors" name="article_authors" type="text" placeholder="Article Authors" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="source_image">Image</label>
+  <div class="col-md-4">
+    <input id="source_image" name="source_image" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="source_description">Description</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="source_description" name="source_description"></textarea>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="article_categories">Categories</label>
+  <div class="col-md-4">
+    <select id="article_categories" name="article_categories" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="source_tags">Tage</label>
+  <div class="col-md-4">
+    <select id="source_tags" name="source_tags" class="form-control">
+      <option value="">Option one</option>
+      <option value="">Option two</option>
+    </select>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+{% endblock %}

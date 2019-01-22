@@ -13,17 +13,19 @@ class BlogController extends Controller
     public function homePageAction()
     {
         // replace this example code with whatever you need
-        return $this->render('blog/homepage.html.twig');
-    }
-
-    /**
-     *  @Route("/post/{id}", name="post")
-     */
-    public function postAction( $id)
-    {
-        // replace this example code with whatever you need
         return $this->render('blog/homepage.html.twig', [
-            'id' => $id,
+            'current_menu' => 'home'
         ]);
     }
+
+    // /**
+    //  *  @Route("/post/{id}", name="post")
+    //  */
+    // public function postAction( $id)
+    // {
+    //     // replace this example code with whatever you need
+    //     return $this->render('blog/homepage.html.twig', [
+    //         'id' => $id,
+    //     ]);
+    // }
 }
